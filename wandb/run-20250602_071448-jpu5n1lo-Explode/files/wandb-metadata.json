@@ -1,19 +1,32 @@
 {
   "os":  "Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35",
   "python":  "3.10.12",
-  "startedAt":  "2025-06-02T13:52:51.776148Z",
+  "startedAt":  "2025-06-02T14:14:48.401535Z",
   "args":  [
-    "--num_steps",
-    "3",
-    "--game",
-    "Explode"
+    "--game=Explode",
+    "--num_steps=5",
+    "--name=axiom-all-games",
+    "--group=run-all-20250602-071232",
+    "--prune_every=250",
+    "--bmr_samples=1500",
+    "--bmr_pairs=1500",
+    "--planning_horizon=24",
+    "--planning_rollouts=384",
+    "--num_samples_per_rollout=2",
+    "--num_slots=24",
+    "--n_total_components=400",
+    "--precision_type=float32",
+    "--smm_eloglike_threshold=6.0",
+    "--used_threshold=0.025",
+    "--velocity_clip_value=0.001"
   ],
   "program":  "/home/trim/Documents/GitHub/axiom/main.py",
   "codePath":  "main.py",
   "git":  {
-    "remote":  "https://github.com/VersesTech/axiom.git",
-    "commit":  "b99f62599e73294639f1944827bf427909f6c698"
+    "remote":  "https://github.com/docxology/axiom.git",
+    "commit":  "8e4df759cda6851813a97156c2cae55bfd44a53c"
   },
+  "email":  "danielarifriedman@gmail.com",
   "root":  "/home/trim/Documents/GitHub/axiom",
   "host":  "pop",
   "username":  "trim",
@@ -26,7 +39,7 @@
   "disk":  {
     "/":  {
       "total":  "493387022336",
-      "used":  "386288644096"
+      "used":  "386494668800"
     }
   },
   "memory":  {
