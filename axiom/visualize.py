@@ -206,7 +206,7 @@ def plot_decoded_positions_with_switch_colors(
     decoded_mu_hist, offsets, stdevs, width, height, switch_hist, tracked_obj_idx
 ):
     """ "
-    This function takes a history of decoded slot-means (obtained via marginalizing out <\log p(y|x, A, \Sigma)>_Q(A, Sigma, x)
+    This function takes a history of decoded slot-means (obtained via marginalizing out <\\log p(y|x, A, \\Sigma)>_Q(A, Sigma, x)
     from an SMM model, and plots the positions of the objects in the scene over time, colored by the switch index.
     """
     T = decoded_mu_hist.shape[0]

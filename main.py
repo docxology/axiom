@@ -1,6 +1,6 @@
 # Copyright 2025 VERSES AI, Inc.
 #
-# Licensed under the VERSES Academic Research License (the “License”);
+# Licensed under the VERSES Academic Research License (the "License");
 # you may not use this file except in compliance with the license.
 #
 # You may obtain a copy of the License at
@@ -135,8 +135,6 @@ def main(config):
                 subkey,
                 carry["rmm_model"],
                 *bmr_buffer,
-                n_samples=config.bmr_samples,
-                n_pairs=config.bmr_pairs,
             )
             carry["rmm_model"] = new_rmm
 
