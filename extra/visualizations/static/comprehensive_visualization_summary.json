@@ -1,0 +1,222 @@
+{
+  "total_visualizations": 13,
+  "successful_files": 12,
+  "failed_files": 1,
+  "visualizations": {
+    "smm_architecture": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/smm_architecture.png",
+    "hsmm_architecture": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/hsmm_architecture.png",
+    "imm_architecture": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/imm_architecture.png",
+    "rmm_architecture": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/rmm_architecture.png",
+    "tmm_architecture": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/tmm_architecture.png",
+    "utils_architecture": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/hybrid_utils_architecture.png",
+    "smm_evolution": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/smm_state_evolution.png",
+    "hsmm_evolution": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/hsmm_state_evolution.png",
+    "rmm_evolution": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/rmm_state_evolution.png",
+    "tmm_evolution": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/tmm_state_evolution.png",
+    "relationships": null,
+    "all_architectures": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/all_model_architectures.png",
+    "graphical_abstract": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static/axiom_graphical_abstract.png"
+  },
+  "configurations_used": {
+    "smm": {
+      "width": 160,
+      "height": 210,
+      "input_dim": 5,
+      "slot_dim": 2,
+      "num_slots": 32,
+      "use_bias": true,
+      "ns_a": 1.0,
+      "ns_b": 1.0,
+      "dof_offset": 10.0,
+      "mask_prob": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        0.075,
+        0.075,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "transform_inv_v_scale": 100.0,
+      "bias_inv_v_scale": 0.001,
+      "num_e_steps": 2,
+      "learning_rate": 1.0,
+      "beta": 0.0,
+      "eloglike_threshold": 5.0,
+      "max_grow_steps": 20
+    },
+    "hsmm": [
+      {
+        "width": 160,
+        "height": 210,
+        "input_dim": 5,
+        "slot_dim": 2,
+        "num_slots": 16,
+        "use_bias": true,
+        "ns_a": 1.0,
+        "ns_b": 1.0,
+        "dof_offset": 10.0,
+        "mask_prob": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.075,
+          0.075,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "transform_inv_v_scale": 100.0,
+        "bias_inv_v_scale": 0.001,
+        "num_e_steps": 2,
+        "learning_rate": 1.0,
+        "beta": 0.0,
+        "eloglike_threshold": 5.0,
+        "max_grow_steps": 20
+      },
+      {
+        "width": 160,
+        "height": 210,
+        "input_dim": 5,
+        "slot_dim": 4,
+        "num_slots": 8,
+        "use_bias": true,
+        "ns_a": 1.0,
+        "ns_b": 1.0,
+        "dof_offset": 10.0,
+        "mask_prob": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.075,
+          0.075,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "transform_inv_v_scale": 100.0,
+        "bias_inv_v_scale": 0.001,
+        "num_e_steps": 2,
+        "learning_rate": 1.0,
+        "beta": 0.0,
+        "eloglike_threshold": 5.0,
+        "max_grow_steps": 20
+      },
+      {
+        "width": 160,
+        "height": 210,
+        "input_dim": 5,
+        "slot_dim": 6,
+        "num_slots": 4,
+        "use_bias": true,
+        "ns_a": 1.0,
+        "ns_b": 1.0,
+        "dof_offset": 10.0,
+        "mask_prob": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          0.075,
+          0.075,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "transform_inv_v_scale": 100.0,
+        "bias_inv_v_scale": 0.001,
+        "num_e_steps": 2,
+        "learning_rate": 1.0,
+        "beta": 0.0,
+        "eloglike_threshold": 5.0,
+        "max_grow_steps": 20
+      }
+    ],
+    "imm": {
+      "num_object_types": 32,
+      "num_features": 5,
+      "i_ell_threshold": -500.0,
+      "cont_scale_identity": 0.5,
+      "color_precision_scale": 1.0,
+      "color_only_identity": false
+    },
+    "rmm": {
+      "num_components_per_switch": 25,
+      "num_switches": 100,
+      "num_object_types": 32,
+      "num_features": 5,
+      "num_continuous_dims": 7,
+      "interact_with_static": false,
+      "r_ell_threshold": -100.0,
+      "i_ell_threshold": -500.0,
+      "cont_scale_identity": 0.5,
+      "cont_scale_switch": 25.0,
+      "discrete_alphas": [
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001,
+        1.0,
+        0.0001
+      ],
+      "r_interacting": 0.6,
+      "r_interacting_predict": 0.6,
+      "forward_predict": false,
+      "stable_r": false,
+      "relative_distance": true,
+      "absolute_distance_scale": false,
+      "reward_prob_threshold": 0.45,
+      "color_precision_scale": 1.0,
+      "color_only_identity": false,
+      "exclude_background": true,
+      "use_ellipses_for_interaction": true,
+      "velocity_scale": 10.0
+    },
+    "tmm": {
+      "n_total_components": 200,
+      "state_dim": 2,
+      "dt": 1.0,
+      "vu": 0.05,
+      "use_bias": true,
+      "use_velocity": true,
+      "sigma_sqr": 2.0,
+      "logp_threshold": -1e-05,
+      "position_threshold": 0.15,
+      "use_unused_counter": true,
+      "clip_value": 0.0005
+    }
+  },
+  "output_directory": "/home/trim/Documents/GitHub/axiom/extra/visualizations/static",
+  "model_types_covered": [
+    "SMM",
+    "HSMM",
+    "IMM",
+    "RMM",
+    "TMM",
+    "Utils"
+  ],
+  "visualization_types": [
+    "Individual Architectures",
+    "State Space Evolution",
+    "Model Relationships",
+    "Comprehensive Overview",
+    "Graphical Abstract"
+  ],
+  "timestamp": "/home/trim/Documents/GitHub/axiom/extra"
+}

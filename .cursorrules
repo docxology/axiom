@@ -1,0 +1,43 @@
+# AXIOM Development Rules
+
+## Core Policy: Extra Folder Isolation
+- **ALL additions, improvements, and custom implementations MUST be placed within the `extra/` folder**
+- **NO modifications should be made to files outside the `extra/` folder**
+- The core AXIOM codebase in `axiom/` and other root-level files must remain unmodified
+- This preserves the integrity of the original AXIOM architecture while enabling extensions
+
+## Extra Folder Structure
+The `extra/` folder should contain:
+- `src/`: Source code for extensions and improvements with subfolders:
+  - `environment_setup/`: Environment configurations and setup scripts
+  - `model_setup_analysis/`: Model analysis tools and utilities
+  - `operation/`: Operational enhancements and optimizations
+  - `visualization/`: Visualization and animation improvements
+- All custom implementations, analyses, and experiments
+- Documentation for extensions
+
+## Testing Requirements
+- All code in `extra/` must be 100% tested
+- Use test-driven development (TDD) approach
+- Tests should be modular and comprehensive
+- Follow professional testing best practices
+
+## Code Quality Standards
+- Use modular, well-documented, clearly reasoned code
+- Avoid redundant code sections and scripts
+- Follow Python best practices and conventions
+- Use python3 for all Python scripts
+- Implement real data analysis (no mock methods)
+
+## Development Workflow
+1. Always place new code in `extra/src/` with appropriate subfolder
+2. Write comprehensive tests first (TDD approach)
+3. Ensure 100% test coverage
+4. Document functionality clearly but understated (show, don't tell)
+5. Follow all established coding standards
+
+## Important Reminders
+- Never modify files in `axiom/` folder or other core directories
+- All improvements go in `extra/` to maintain architecture integrity
+- Maintain clear separation between original code and extensions
+- Focus on creating value through well-tested, modular improvements

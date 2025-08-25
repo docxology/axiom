@@ -1,0 +1,169 @@
+{
+  "models": {
+    "smm": {
+      "type": "Slot Memory Model",
+      "components": [
+        "Input Layer",
+        "Attention Mechanism",
+        "Slot Representations",
+        "Output Reconstruction"
+      ],
+      "relationships": [
+        "processes",
+        "attends_to",
+        "represents",
+        "reconstructs"
+      ],
+      "parameters": [
+        "input_dim",
+        "slot_dim",
+        "num_slots",
+        "use_bias"
+      ],
+      "computation": [
+        "linear_transforms",
+        "attention_weights",
+        "slot_updates"
+      ]
+    },
+    "hsmm": {
+      "type": "Hierarchical Slot Memory Model",
+      "components": [
+        "Layer 0",
+        "Layer 1",
+        "Layer 2",
+        "Hierarchical Integration"
+      ],
+      "relationships": [
+        "feeds_into",
+        "aggregates",
+        "hierarchically_processes"
+      ],
+      "parameters": [
+        "num_layers",
+        "layer_configs",
+        "hierarchical_dims"
+      ],
+      "computation": [
+        "layer_processing",
+        "hierarchical_aggregation",
+        "cross_layer_attention"
+      ]
+    },
+    "imm": {
+      "type": "Identity Memory Model",
+      "components": [
+        "Feature Extraction",
+        "Identity Clustering",
+        "Object Recognition",
+        "Identity Memory"
+      ],
+      "relationships": [
+        "extracts",
+        "clusters",
+        "recognizes",
+        "remembers"
+      ],
+      "parameters": [
+        "num_object_types",
+        "num_features",
+        "identity_threshold"
+      ],
+      "computation": [
+        "feature_processing",
+        "clustering_algorithm",
+        "identity_matching"
+      ]
+    },
+    "rmm": {
+      "type": "Relational Memory Model",
+      "components": [
+        "State Processing",
+        "Identity Recognition",
+        "Interaction Detection",
+        "Dynamics Prediction"
+      ],
+      "relationships": [
+        "processes",
+        "identifies",
+        "detects_interactions",
+        "predicts_dynamics"
+      ],
+      "parameters": [
+        "num_components_per_switch",
+        "num_switches",
+        "interaction_radius"
+      ],
+      "computation": [
+        "relational_reasoning",
+        "dynamics_modeling",
+        "switch_prediction"
+      ]
+    },
+    "tmm": {
+      "type": "Temporal Memory Model",
+      "components": [
+        "Current State",
+        "Transition Components",
+        "Temporal Prediction",
+        "Velocity Integration"
+      ],
+      "relationships": [
+        "models",
+        "transitions",
+        "predicts",
+        "integrates"
+      ],
+      "parameters": [
+        "state_dim",
+        "num_components",
+        "velocity_enabled"
+      ],
+      "computation": [
+        "state_transitions",
+        "temporal_modeling",
+        "velocity_estimation"
+      ]
+    }
+  },
+  "relationships": {
+    "smm_hsmm": {
+      "type": "hierarchical",
+      "description": "SMM provides base for HSMM layers"
+    },
+    "hsmm_imm": {
+      "type": "identity",
+      "description": "HSMM uses IMM for object identification"
+    },
+    "hsmm_rmm": {
+      "type": "relational",
+      "description": "HSMM provides objects for RMM interactions"
+    },
+    "rmm_tmm": {
+      "type": "temporal",
+      "description": "RMM uses TMM for temporal dynamics"
+    },
+    "imm_rmm": {
+      "type": "identity",
+      "description": "IMM provides identities for RMM relations"
+    }
+  },
+  "data_flows": {
+    "observation_processing": [
+      "SMM",
+      "HSMM"
+    ],
+    "identity_recognition": [
+      "IMM",
+      "RMM"
+    ],
+    "relational_dynamics": [
+      "RMM",
+      "TMM"
+    ],
+    "action_prediction": [
+      "RMM",
+      "TMM"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "SUCCESS",
+  "visualizations_generated": 5,
+  "visualizations": {
+    "smm": "/home/trim/Documents/GitHub/axiom/extra/src/model_setup_analysis/model_visualizations/verify_smm.png",
+    "imm": "/home/trim/Documents/GitHub/axiom/extra/src/model_setup_analysis/model_visualizations/verify_imm.png",
+    "rmm": "/home/trim/Documents/GitHub/axiom/extra/src/model_setup_analysis/model_visualizations/verify_rmm.png",
+    "all": "/home/trim/Documents/GitHub/axiom/extra/src/model_setup_analysis/model_visualizations/verify_all.png",
+    "abstract": "/home/trim/Documents/GitHub/axiom/extra/src/model_setup_analysis/model_visualizations/verify_abstract.png"
+  },
+  "system_components": [
+    "AXIOMModelVisualizer",
+    "ArchitectureVisualizer",
+    "StateSpaceVisualizer",
+    "RelationshipVisualizer",
+    "ComprehensiveVisualizer"
+  ],
+  "model_types_supported": [
+    "SMM",
+    "HSMM",
+    "IMM",
+    "RMM",
+    "TMM",
+    "Hybrid Utils"
+  ],
+  "visualization_types": [
+    "Individual Architectures",
+    "State Space Evolution",
+    "Model Relationships",
+    "Comprehensive Overview",
+    "Graphical Abstract"
+  ]
+}

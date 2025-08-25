@@ -1,0 +1,92 @@
+{
+  "system_info": {
+    "platform": "Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35",
+    "python_version": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+    "cpu_count": 12,
+    "memory_gb": 62.49915313720703,
+    "disk_free_gb": 22.969120025634766,
+    "gpu_available": false,
+    "gpu_count": 0,
+    "uv_available": true,
+    "uv_version": "uv 0.8.5"
+  },
+  "validation_results": {
+    "valid": false,
+    "checks": {
+      "python_version": {
+        "current": "3.10.12",
+        "required": "3.11",
+        "valid": false
+      },
+      "memory": {
+        "current_gb": 62.49915313720703,
+        "required_gb": 8,
+        "valid": true
+      },
+      "storage": {
+        "free_gb": 22.96910858154297,
+        "required_gb": 10,
+        "valid": true
+      },
+      "uv": {
+        "available": true,
+        "version": "uv 0.8.5",
+        "valid": true
+      },
+      "visualization": {
+        "dependencies": {
+          "matplotlib": true,
+          "networkx": true,
+          "plotly": true
+        },
+        "valid": true
+      }
+    }
+  },
+  "configuration": {
+    "name": "test",
+    "python_version": "3.11",
+    "uv_version": "latest",
+    "dependencies": [
+      "jax[cpu]",
+      "numpy",
+      "matplotlib",
+      "networkx",
+      "scipy",
+      "pandas",
+      "seaborn",
+      "plotly",
+      "dash",
+      "jupyter",
+      "ipykernel",
+      "black",
+      "isort",
+      "flake8",
+      "mypy",
+      "pytest",
+      "pytest-cov",
+      "sphinx",
+      "sphinx-rtd-theme"
+    ],
+    "dev_dependencies": [
+      "pre-commit",
+      "jupyterlab",
+      "tensorboard",
+      "wandb"
+    ],
+    "environment_variables": {
+      "AXIOM_EXTRA_ROOT": "/home/trim/Documents/GitHub/axiom/extra",
+      "AXIOM_PROJECT_ROOT": "/home/trim/Documents/GitHub/axiom",
+      "JAX_PLATFORM_NAME": "cpu",
+      "CUDA_VISIBLE_DEVICES": ""
+    },
+    "gpu_support": false,
+    "memory_requirements_gb": 8,
+    "storage_requirements_gb": 10,
+    "network_requirements": true,
+    "visualization_support": true,
+    "analytics_support": true,
+    "description": "Universal Virtual Environment for AXIOM Extensions"
+  },
+  "timestamp": "/home/trim/Documents/GitHub/axiom/extra"
+}

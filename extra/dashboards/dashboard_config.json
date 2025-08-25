@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "port": 8050,
+  "host": "localhost",
+  "components": [
+    "model_visualizer",
+    "performance_monitor",
+    "state_space_explorer",
+    "architecture_browser"
+  ],
+  "data_sources": [
+    "model_outputs",
+    "performance_metrics",
+    "visualization_data"
+  ]
+}

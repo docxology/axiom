@@ -1,0 +1,19 @@
+{
+  "name": "integration_test",
+  "python_version": "3.11",
+  "requirements": [
+    "numpy>=1.21.0",
+    "torch>=2.0.0",
+    "matplotlib>=3.5.0",
+    "wandb>=0.15.0",
+    "psutil>=5.8.0",
+    "pytest>=7.0.0"
+  ],
+  "environment_variables": {
+    "AXIOM_ENV": "development",
+    "PYTHONPATH": "/home/trim/Documents/GitHub/axiom/extra"
+  },
+  "gpu_required": false,
+  "memory_gb": 8,
+  "description": "Default configuration for AXIOM extensions"
+}

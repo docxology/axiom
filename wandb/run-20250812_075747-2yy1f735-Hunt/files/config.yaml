@@ -1,0 +1,171 @@
+_wandb:
+    value:
+        cli_version: 0.18.3
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 12
+                - 55
+            "2":
+                - 12
+                - 55
+            "3":
+                - 13
+                - 14
+                - 16
+                - 23
+                - 55
+            "4": 3.10.12
+            "5": 0.18.3
+            "8":
+                - 5
+            "12": 0.18.3
+            "13": linux-x86_64
+bmr_pairs:
+    value: 10
+bmr_samples:
+    value: 10
+game:
+    value: Hunt
+group:
+    value: run-all-20250812-075633
+id:
+    value: 2yy1f735
+imm:
+    value:
+        color_only_identity: false
+        color_precision_scale: 1
+        cont_scale_identity: 0.5
+        i_ell_threshold: -500
+        num_features: 5
+        num_object_types: 32
+layer_for_dynamics:
+    value: 0
+max_steps_tracked_unused:
+    value: 10
+min_track_steps:
+    value:
+        - 1
+moving_threshold:
+    value:
+        - 0.003
+name:
+    value: axiom-all-games
+num_steps:
+    value: 10
+num_warmup_steps:
+    value: 50
+perturb:
+    value: null
+perturb_step:
+    value: 5000
+planner:
+    value:
+        alpha: 1
+        gamma: 0.99
+        info_gain: 0.1
+        iters: 1
+        lazy_reward: false
+        normalize: true
+        num_policies: 16
+        num_samples_per_policy: 1
+        num_steps: 8
+        random_ratio: 0.5
+        repeat_prob: 0
+        sample_action: false
+        temperature: 10
+        topk_ratio: 0.1
+precision_type:
+    value: float32
+project:
+    value: axiom
+prune_every:
+    value: 500
+remap_color:
+    value: false
+rmm:
+    value:
+        absolute_distance_scale: true
+        color_only_identity: false
+        color_precision_scale: 1
+        cont_scale_identity: 0.5
+        cont_scale_switch: 75
+        discrete_alphas:
+            - 0.0001
+            - 0.0001
+            - 0.0001
+            - 0.0001
+            - 1
+            - 0.0001
+        exclude_background: true
+        forward_predict: false
+        i_ell_threshold: -500
+        interact_with_static: false
+        num_components_per_switch: 10
+        num_continuous_dims: 7
+        num_features: 5
+        num_object_types: 32
+        num_switches: 500
+        r_ell_threshold: -10
+        r_interacting: 0.075
+        r_interacting_predict: 0.075
+        relative_distance: true
+        reward_prob_threshold: 0.45
+        stable_r: false
+        use_ellipses_for_interaction: false
+        velocity_scale: 10
+seed:
+    value: 0
+smm:
+    value:
+        - beta: 0
+          bias_inv_v_scale: 0.001
+          dof_offset: 10
+          eloglike_threshold: 5.7
+          height: 210
+          input_dim: 5
+          learning_rate: 1
+          mask_prob:
+            - 0
+            - 0
+            - 0
+            - 0
+            - 1
+          max_grow_steps: 20
+          ns_a: 1
+          ns_b: 1
+          num_e_steps: 2
+          num_slots: 32
+          scale:
+            - 0.075
+            - 0.075
+            - 0.75
+            - 0.75
+            - 0.75
+          slot_dim: 2
+          transform_inv_v_scale: 100
+          use_bias: true
+          width: 160
+tmm:
+    value:
+        clip_value: 0.00075
+        dt: 1
+        logp_threshold: -1e-05
+        n_total_components: 500
+        position_threshold: 0.2
+        sigma_sqr: 2
+        state_dim: 3
+        use_bias: true
+        use_unused_counter: true
+        use_velocity: true
+        vu: 0.05
+use_unused_counter:
+    value: true
+used_threshold:
+    value:
+        - 0.02
+velocity_clip_value:
+    value: 0.00075
+warmup_smm:
+    value: false

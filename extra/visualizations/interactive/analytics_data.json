@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "model_complexity": {},
+    "performance_trends": {},
+    "architecture_relationships": {},
+    "computation_graphs": {}
+  },
+  "visualization_metrics": {
+    "entity_relationships": [],
+    "computation_flows": [],
+    "performance_analytics": [],
+    "architecture_patterns": []
+  }
+}

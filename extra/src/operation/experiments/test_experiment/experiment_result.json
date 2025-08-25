@@ -1,0 +1,78 @@
+{
+  "experiment_name": "test_experiment",
+  "total_runs": 2,
+  "successful_runs": 2,
+  "failed_runs": 0,
+  "run_results": [
+    {
+      "run_id": "mock_run",
+      "model_type": "rmm",
+      "game_name": "game1",
+      "total_steps": 100,
+      "total_episodes": 1,
+      "total_reward": 50.0,
+      "average_reward": 50.0,
+      "best_reward": 50.0,
+      "worst_reward": 50.0,
+      "duration_seconds": 10.0,
+      "success": true,
+      "error_message": null,
+      "metadata": {}
+    },
+    {
+      "run_id": "mock_run",
+      "model_type": "rmm",
+      "game_name": "game1",
+      "total_steps": 100,
+      "total_episodes": 1,
+      "total_reward": 50.0,
+      "average_reward": 50.0,
+      "best_reward": 50.0,
+      "worst_reward": 50.0,
+      "duration_seconds": 10.0,
+      "success": true,
+      "error_message": null,
+      "metadata": {}
+    }
+  ],
+  "best_run": {
+    "run_id": "mock_run",
+    "model_type": "rmm",
+    "game_name": "game1",
+    "total_steps": 100,
+    "total_episodes": 1,
+    "total_reward": 50.0,
+    "average_reward": 50.0,
+    "best_reward": 50.0,
+    "worst_reward": 50.0,
+    "duration_seconds": 10.0,
+    "success": true,
+    "error_message": null,
+    "metadata": {}
+  },
+  "worst_run": {
+    "run_id": "mock_run",
+    "model_type": "rmm",
+    "game_name": "game1",
+    "total_steps": 100,
+    "total_episodes": 1,
+    "total_reward": 50.0,
+    "average_reward": 50.0,
+    "best_reward": 50.0,
+    "worst_reward": 50.0,
+    "duration_seconds": 10.0,
+    "success": true,
+    "error_message": null,
+    "metadata": {}
+  },
+  "average_performance": {
+    "average_reward": 50.0,
+    "best_reward": 50.0,
+    "worst_reward": 50.0,
+    "total_reward": 100.0,
+    "average_duration": 10.0
+  },
+  "duration_seconds": 6.985664367675781e-05,
+  "start_time": 1756152963.690817,
+  "end_time": 1756152963.6908872
+}
